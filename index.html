@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>حساب الجذر التربيعي</title>
+  <script>
+    function calculateSquareRoot() {
+      var number = document.getElementById("number").value;
+      var result = Math.sqrt(number);
+      document.getElementById("result").innerHTML = "الجذر التربيعي = " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>حساب الجذر التربيعي</h2>
+  <label for="number">ادخل الرقم:</label>
+  <input type="number" id="number">
+  <button onclick="calculateSquareRoot()">احسب</button>
+  <p id="result"></p>
+</body>
+</html>
